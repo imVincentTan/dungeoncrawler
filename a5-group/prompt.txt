@@ -1,0 +1,5 @@
+Race: Human Gold: 0                                                  Floor 1
+HP: 20
+Atk: 20
+Def: 20
+Action:

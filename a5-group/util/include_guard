@@ -1,0 +1,14 @@
+#!/bin/sh
+
+for f in *.h; do
+    [ -s $f ] && continue;
+    var=${f^^}
+    var=${var//./_}
+    cat >$f <<EOF
+#ifndef $var
+#define $var
+
+
+#endif
+EOF
+done
